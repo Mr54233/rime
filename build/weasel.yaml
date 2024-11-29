@@ -2,7 +2,7 @@ __build_info:
   rime_version: 1.11.2
   timestamps:
     weasel: 1732845890
-    weasel.custom: 1732845518
+    weasel.custom: 1732870323
 app_options:
   firefox.exe:
     inline_preedit: true
@@ -37,15 +37,15 @@ preset_color_schemes:
     name: "致青春／So Young"
     text_color: 0x8236d3
   wechat:
-    back_color: 0xFFFFFF
-    border_color: 0xFFFFFF
+    back_color: 0xf3f3f3
+    border_color: 0xf3f3f3
     candidate_text_color: 0x3c3c3c
     comment_text_color: 0x999999
     hilited_back_color: 0x79af22
     hilited_candidate_back_color: 0x79af22
-    hilited_comment_text_color: 0xFFFFFF
-    hilited_label_color: 0xFFFFFF
-    hilited_text_color: 0xFFFFFF
+    hilited_comment_text_color: 0xf3f3f3
+    hilited_label_color: 0xf3f3f3
+    hilited_text_color: 0xf3f3f3
     label_color: 0x999999
     name: "微信／Wechat"
     shadow_color: 0x20000000
