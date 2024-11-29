@@ -1,0 +1,6 @@
+2023/05/05-21:21:58.641000 14552 Log #377: 0 ops saved to Table #378 OK
+2023/05/05-21:21:58.642000 14552 Archiving C:\Users\54\AppData\Roaming\Rime\rime_ice.userdb/000377.log: OK
+2023/05/05-21:21:58.643000 14552 Table #368: 737 entries OK
+2023/05/05-21:21:58.643000 14552 Table #372: 335 entries OK
+2023/05/05-21:21:58.646000 14552 Archiving C:\Users\54\AppData\Roaming\Rime\rime_ice.userdb/MANIFEST-000376: OK
+2023/05/05-21:21:58.654000 14552 **** Repaired leveldb C:\Users\54\AppData\Roaming\Rime\rime_ice.userdb; recovered 2 files; 38758 bytes. Some data may have been lost. ****
