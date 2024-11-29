@@ -1,0 +1,13 @@
+customization:
+  distribution_code_name: trime
+  distribution_version: "v3.2.13-20230701"
+  generator: "Rime::SwitcherSettings"
+  modified_time: "Sun Jul 23 20:05:49 2023"
+  rime_version: 1.8.5
+patch:
+  menu:
+    page_size: 9
+  schema_list:
+    - {schema: rime_ice}
+  "switcher/hotkeys":
+    - "Control+F1"

@@ -1,0 +1,167 @@
+customization:
+  distribution_code_name: Weasel
+  distribution_version: 0.15.0
+  generator: "Weasel::UIStyleSettings"
+  modified_time: "Tue Apr 25 22:45:18 2023"
+  rime_version: 1.5.3
+# patch:
+#   style:
+#     color_scheme: brisk
+#     font_face: "苹方 简 常规"
+#     font_point: 15
+#     horizontal: false
+#     inline_preedit: true
+#   "style/layout/corner_radius": 5 #圆角
+#   "style/color_scheme": psionics
+
+patch:
+  # 如果想要修改皮肤，直接更改 color_scheme 的值即可
+  style:
+    # 以下修改皮肤
+    color_scheme: wechat
+    color_scheme_dark: win11dark
+    color_font: true
+    horizontal: false # 横排显示
+    inline_preedit: true # 嵌入式候选窗单行显示
+    layout/enhanced_position: true
+    font_face: "苹方 简, LXGW Wenkai GB Screen, Microsoft YaHei" # 候选字字体
+    font_point: 14 # 候选字字体大小
+    comment_font_face: "LXGW Wenkai GB Screen, Microsoft YaHei" # 注解字体
+    comment_font_point: 12 # 注解字体大小
+    label_font_point: 13 # 序号字体大小
+    label_format: "%s" # 取消序号和候选字之间的点号
+    layout:
+      border_width: 1 # 条边框宽度
+      border_hight: 1 # 条边框高度
+      border_color_width: 0 # 候选窗边框宽度
+      candidate_spacing: 10 # 候选字间隔
+      corner_radius: 5 # 边框的圆角幅度
+      round_corner: 5 # 第一候选字高亮颜色的圆角,别名 hilited_corner_radius
+      margin_x: 8 # 起始候选字的左边距
+      margin_y: 8 # 候选字的上下边距
+      min_width: 50 # 候选窗最小宽度
+      max_width: 1250 # 候选窗最大宽度
+      hilite_padding: 4 # 候选字背景色色块高度
+      hilite_spacing: 4 # 序号和候选字之间的间隔
+      shadow_radius: 5 # 全局阴影模糊半径，如果为0则全局禁用阴影
+      shadow_offset_x: 0 # 阴影x偏置
+      shadow_offset_y: 2 # 阴影x偏置
+      align_type: bottom # 字体对齐,可选值：center,bottom
+
+  preset_color_schemes:
+    so_young:
+      name: "致青春／So Young"
+      author: "五磅兔 <zcunlin@foxmail.com>"
+      text_color: 0x8236d3 # 默认文字颜色
+      back_color: 0xe3f6fd # 候选窗背景色，24位色值，16进制，BGR顺序
+      border_color: 0xdcdcdc # 候选窗边框颜色
+      label_color: 0xa1a193 # 预选栏编号颜色
+      candidate_text_color: 0x837b65 # 非高亮候选文字颜色
+      comment_text_color: 0xd28b26 # 拼音等提示文字颜色
+      hilited_text_color: 0x969483 # 编码文字颜色
+      hilited_back_color: 0xd5e8ee # 编码背景颜色
+      hilited_candidate_text_color: 0xd5e8ee # 高亮候选文字颜色
+      hilited_comment_text_color: 0xd5e8ee # 高亮的注解文字颜色
+      hilited_candidate_back_color: 0x98a12a # 高亮的注解文字颜色
+      # name: "致青春／So Young"
+      # author: "五磅兔 <zcunlin@foxmail.com>"
+      # back_color: 0xe3f6fd                      # 候选条背景色，24位色值，16进制，BGR顺序
+      # border_color: 0xdcdcdc                    # 边框色
+      # text_color: 0x8236d3                      # 拼音行文字颜色
+      # hilited_back_color: 0xd5e8ee              # 候选项背景背景色
+      # hilited_candidate_back_color: 0x98a12a    # 第一候选项背景颜色
+      # hilited_candidate_text_color: 0xd5e8ee    # 第一候选项文字颜色
+      # hilited_comment_text_color: 0xd5e8ee      # 注解文字高亮
+      # hilited_text_color: 0x969483              # 高亮拼音 (需要开启内嵌编码)
+      # label_color: 0xa1a193                     # 预选栏编号颜色
+      # candidate_text_color: 0x837b65            # 预选项文字颜色
+      # comment_text_color: 0xd28b26              # 拼音等提示文字颜色
+      # #candidate_format: "%c\u2005%@"            # 用 1/6 em 空格 U+2005 来控制编号 %c 和候选词 %@ 前后的空间
+      # font_face: "苹方 简 常规"                   # 候选词编号字体
+      # font_point: 16              # 候选文字大小
+      # label_font_point: 13        # 候选编号大小
+      # corner_radius: 5            # 候选条圆角
+      # hilited_corner_radius: 5    # 高亮圆角
+      # border_height: 4            # 窗口上下高度
+      # border_width: 4             # 窗口左右宽度
+      # border_color_width: 0       # 输入条边框宽度
+
+    # 对 purity_of_form 略微调整颜色，让色彩更柔和点，补全其他选项和注释
+    purity_of_form_custom:
+      name: "純粹的形式／Purity of Form Custom"
+      author: 雨過之後、佛振
+      # 如果将字体设置为 PingFangSC-Regular
+      # 会让 🈶🈚️🉑🈲🉐 这几个 Emoji 失去彩色效果，留空反而可以显示。。。
+      # font_face: "苹方 简 常规"        # 字体及大小
+      # font_point: 18
+      # label_font_face: "Helvetica"    # 序号字体及大小
+      # label_font_point: 12
+      # comment_font_face: "Helvetica"  # 注字体及大小
+      # comment_font_point: 16
+      # candidate_list_layout: stacked  # 候选项排列方向 stacked | linear
+      # text_orientation: horizontal    # 文字排列方向 horizontal | vertical
+      # inline_preedit: true            # 拼音位于： 候选框 false | 行内 true
+      # translucency: false             # 磨砂： false | true
+      # mutual_exclusive: false         # 色不叠加： false | true
+      # border_height: 4               # 外边框 高
+      # border_width: 5                # 外边框 宽
+      # corner_radius: 3              # 外边框 圆角半径
+      # hilited_corner_radius: 0       # 选中框 圆角半径
+      # surrounding_extra_expansion: 0 # 候选项背景相对大小？
+      # shadow_size: 0                 # 阴影大小
+      # line_spacing: 5                # 行间距
+      # base_offset: 0                 # 字基高
+      # alpha: 1                       # 透明度，0~1
+      # spacing: 10                    # 拼音与候选项之间的距离 （inline_preedit: false）
+      # color_space: srgb                       # 色彩空间： srgb | display_p3
+      back_color: 0x545554 # 底色
+      hilited_candidate_back_color: 0xE3E3E3 # 选中底色
+      label_color: 0xBBBBBB # 序号颜色
+      hilited_candidate_label_color: 0x4C4C4C # 选中序号颜色
+      candidate_text_color: 0xEEEEEE # 文字颜色
+      hilited_candidate_text_color: 0x000000 # 选中文字颜色
+      comment_text_color: 0x808080 # 注颜色
+      hilited_comment_text_color: 0x808080 # 选中注颜色
+      text_color: 0x808080 # 拼音颜色 （inline_preedit: false）
+      hilited_text_color: 0xEEEEEE # 选中拼音颜色 （inline_preedit: false）
+      # candidate_back_color:                 # 候选项底色
+      # preedit_back_color:                   # 拼音底色 （inline_preedit: false）
+      # hilited_back_color:                   # 选中拼音底色 （inline_preedit: false）
+      # border_color:                         # 外边框颜色
+
+    wechat:
+      name: "微信／Wechat" # 主题名称
+      text_color: 0x424242 # 普通文字颜色（深灰）
+      label_color: 0x999999 # 序号颜色（浅灰）
+      back_color: 0xFFFFFF # 背景颜色（白色）
+      border_color: 0xFFFFFF # 边框颜色（白色）
+      comment_text_color: 0x999999 # 注释文字颜色（浅灰）
+      candidate_text_color: 0x3c3c3c # 候选项文字颜色（深灰）
+      hilited_comment_text_color: 0xFFFFFF # 高亮注释文字颜色（白色）
+      hilited_back_color: 0x79af22 # 高亮背景色（微信绿）
+      hilited_text_color: 0xFFFFFF # 高亮文字颜色（白色）
+      hilited_label_color: 0xFFFFFF # 高亮序号颜色（白色）
+      hilited_candidate_back_color: 0x79af22 # 高亮候选项背景色（微信绿）
+      shadow_color: 0x20000000 # 阴影颜色（20%透明度的黑色）
+
+    win11light:
+      name: " Win11浅色 / Win11light"
+      text_color: 0x191919
+      label_color: 0x191919
+      hilited_label_color: 0x191919
+      back_color: 0xf9f9f9
+      border_color: 0x009e5a00
+      hilited_mark_color: 0xc06700
+      hilited_candidate_back_color: 0xf0f0f0
+      shadow_color: 0x20000000
+
+    win11dark:
+      name: "Win11暗色 / Win11Dark"
+      text_color: 0xf9f9f9
+      label_color: 0xf9f9f9
+      back_color: 0x2C2C2C
+      hilited_label_color: 0xf9f9f9
+      border_color: 0x002C2C2C
+      hilited_mark_color: 0xFFC24C
+      hilited_candidate_back_color: 0x383838
+      shadow_color: 0x20000000
