@@ -1,5 +1,9 @@
-2024/11/29-16:52:10.815000 26788 Recovering log #4228
-2024/11/29-16:52:10.816000 26788 Level-0 table #4231: started
-2024/11/29-16:52:10.818000 26788 Level-0 table #4231: 35224 bytes OK
-2024/11/29-16:52:10.825000 26788 Delete type=0 #4228
-2024/11/29-16:52:10.825000 26788 Delete type=3 #4226
+2025/02/19-18:02:10.216000 16108 Log #4510: ignoring conversion error: IO error: C:\Users\54\AppData\Roaming\Rime\rime_ice.userdb/004510.log: 另一个程序正在使用此文件，进程无法访问。
+2025/02/19-18:02:10.217000 16108 Archiving C:\Users\54\AppData\Roaming\Rime\rime_ice.userdb/004510.log: IO error: C:\Users\54\AppData\Roaming\Rime\rime_ice.userdb/004510.log: 另一个程序正在使用此文件，进程无法访问。
+
+2025/02/19-18:02:10.226000 16108 Table #4507: 40120 entries OK
+2025/02/19-18:02:10.226000 16108 Table #4509: 1145 entries OK
+2025/02/19-18:02:10.237000 16108 Archiving C:\Users\54\AppData\Roaming\Rime\rime_ice.userdb/MANIFEST-000001: OK
+2025/02/19-18:02:10.238000 16108 Archiving C:\Users\54\AppData\Roaming\Rime\rime_ice.userdb/MANIFEST-004508: IO error: C:\Users\54\AppData\Roaming\Rime\rime_ice.userdb/MANIFEST-004508: 另一个程序正在使用此文件，进程无法访问。
+
+2025/02/19-18:02:10.247000 16108 **** Repaired leveldb C:\Users\54\AppData\Roaming\Rime\rime_ice.userdb; recovered 2 files; 1767030 bytes. Some data may have been lost. ****
