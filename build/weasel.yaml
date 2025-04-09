@@ -1,8 +1,8 @@
 __build_info:
   rime_version: 1.11.2
   timestamps:
-    weasel: 1732845890
-    weasel.custom: 1732870323
+    weasel: 1744185290
+    weasel.custom: 1744185310
 app_options:
   firefox.exe:
     inline_preedit: true
@@ -78,7 +78,7 @@ style:
   color_scheme_dark: win11dark
   comment_font_face: "LXGW Wenkai GB Screen, Microsoft YaHei"
   comment_font_point: 12
-  font_face: "苹方 简, LXGW Wenkai GB Screen, Microsoft YaHei"
+  font_face: "Maple Mono NF CN, 苹方 简, LXGW Wenkai GB Screen, Microsoft YaHei"
   font_point: 14
   horizontal: false
   inline_preedit: true
