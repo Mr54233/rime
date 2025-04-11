@@ -1,3 +1,6 @@
-2025/04/09-15:55:20.461000 10708 Recovering log #4624
-2025/04/09-15:55:20.474000 10708 Delete type=0 #4624
-2025/04/09-15:55:20.474000 10708 Delete type=3 #4622
+2025/04/12-00:00:22.684000 25884 Log #4860: 16 ops saved to Table #4862 OK
+2025/04/12-00:00:22.685000 25884 Archiving C:\Users\54\AppData\Roaming\Rime\rime_ice.userdb/004860.log: OK
+2025/04/12-00:00:22.687000 25884 Table #4861: 43334 entries OK
+2025/04/12-00:00:22.688000 25884 Table #4862: 16 entries OK
+2025/04/12-00:00:22.689000 25884 Archiving C:\Users\54\AppData\Roaming\Rime\rime_ice.userdb/MANIFEST-004859: OK
+2025/04/12-00:00:22.697000 25884 **** Repaired leveldb C:\Users\54\AppData\Roaming\Rime\rime_ice.userdb; recovered 2 files; 1871683 bytes. Some data may have been lost. ****
