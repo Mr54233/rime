@@ -2,6 +2,28 @@
 
 除日常更新词库外的一些主要更新 🆕、破坏性变更 ⚠️。
 
+## 2025-03-30
+
+- `editor` 配置示例（定制操作键的行为） [#1131](https://github.com/iDvel/rime-ice/pull/1131)
+
+## 2025-03-30
+
+- 所有中文词汇的连接号暂时统一使用 Hyphen-minus `U+002D` [#1194](https://github.com/iDvel/rime-ice/pull/1194)
+
+## 2025-02-24
+
+- 适配 `punctuator` 新属性 [#1180](https://github.com/iDvel/rime-ice/issues/1180)
+
+---
+
+*2024.12.12 Release*
+
+## 2024-12-06
+
+- ⚠️ Lua 模块引用方式变更
+    - 删除了 `rime.lua`
+    - 在方案中引用时添加 `*` 前缀
+
 ---
 
 *2024.11.29 Release*
@@ -12,7 +34,7 @@
 
 ## 2024-11-21
 
-- ⚠️ 非夹注的 symbol 调用按键从 `vfj` 更改为 `vfjz`
+- ⚙️ 非夹注的 symbol 调用按键从 `vfj` 更改为 `vfjz`
 
 ## 2024-11-04
 
@@ -20,7 +42,7 @@
 
 ---
 
-2024-09-25 Release
+*2024-09-25 Release*
 
 ## 2024-09-25
 
