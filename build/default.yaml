@@ -1,8 +1,8 @@
 __build_info:
   rime_version: 1.11.2
   timestamps:
-    default: 1742825293
-    default.custom: 1733030142
+    default: 1744592298
+    default.custom: 1690114157
 ascii_composer:
   good_old_caps_lock: true
   switch_key:
@@ -11,7 +11,7 @@ ascii_composer:
     Control_R: noop
     Shift_L: commit_code
     Shift_R: noop
-config_version: "2024-02-05"
+config_version: "2025-02-24"
 key_binder:
   bindings:
     - {accept: "Shift+Tab", send: "Shift+Left", when: composing}
@@ -24,7 +24,6 @@ key_binder:
     - {accept: "Control+Shift+numbersign", toggle: ascii_punct, when: always}
     - {accept: "Control+Shift+4", toggle: traditionalization, when: always}
     - {accept: "Control+Shift+dollar", toggle: traditionalization, when: always}
-    - {accept: "Control+k", send: "Shift+Delete", when: composing}
     - {accept: KP_0, send: 0, when: composing}
     - {accept: KP_1, send: 1, when: composing}
     - {accept: KP_2, send: 2, when: composing}
@@ -45,6 +44,7 @@ key_binder:
 menu:
   page_size: 9
 punctuator:
+  digit_separators: ",.:"
   full_shape:
     " ": {commit: "　"}
     "!": {commit: "！"}
