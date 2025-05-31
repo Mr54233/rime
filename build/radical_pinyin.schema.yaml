@@ -1,10 +1,10 @@
 __build_info:
-  rime_version: 1.11.2
+  rime_version: 1.13.1
   timestamps:
-    default: 1742825293
+    default: 1744387384
     default.custom: 1733030142
     radical_pinyin.custom: 0
-    radical_pinyin.schema: 1733030142
+    radical_pinyin.schema: 1730611542
 algebra_abc:
   - "xform/^zh/<a>/"
   - "xform/^ch/<e>/"
@@ -248,7 +248,6 @@ key_binder:
     - {accept: "Control+Shift+numbersign", toggle: ascii_punct, when: always}
     - {accept: "Control+Shift+4", toggle: traditionalization, when: always}
     - {accept: "Control+Shift+dollar", toggle: traditionalization, when: always}
-    - {accept: "Control+k", send: "Shift+Delete", when: composing}
     - {accept: KP_0, send: 0, when: composing}
     - {accept: KP_1, send: 1, when: composing}
     - {accept: KP_2, send: 2, when: composing}
