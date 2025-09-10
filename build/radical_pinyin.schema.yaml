@@ -5,6 +5,7 @@ __build_info:
     default.custom: 1690114157
     radical_pinyin.custom: 0
     radical_pinyin.schema: 1732845890
+>>>>>>> 474c71fa634f8949d47fa86a0958c82eceb0cbb6
 algebra_abc:
   - "xform/^zh/<a>/"
   - "xform/^ch/<e>/"
