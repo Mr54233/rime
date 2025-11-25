@@ -1,11 +1,10 @@
 __build_info:
   rime_version: 1.13.1
   timestamps:
-    default: 1748573757
+    default: 1757486074
     default.custom: 1690114157
     radical_pinyin.custom: 0
-    radical_pinyin.schema: 1732845890
->>>>>>> 474c71fa634f8949d47fa86a0958c82eceb0cbb6
+    radical_pinyin.schema: 1757486074
 algebra_abc:
   - "xform/^zh/<a>/"
   - "xform/^ch/<e>/"
@@ -108,6 +107,42 @@ algebra_flypy:
   - "xform/([a-z>])ao(?=^|$|')/$1<c>/"
   - "xform/ui(?=^|$|')/<v>/"
   - "xform/in(?=^|$|')/<b>/"
+  - "xform/'|<|>//"
+algebra_jiajia:
+  - "derive/^([jqxy])u(?=^|$|')/$1v/"
+  - "derive/'([jqxy])u(?=^|$|')/'$1v/"
+  - "derive/^([aoe])([ioun])(?=^|$|')/$1$1$2/"
+  - "derive/'([aoe])([ioun])(?=^|$|')/'$1$1$2/"
+  - "xform/^([aoe])(ng)?(?=^|$|')/$1$1$2/"
+  - "xform/'([aoe])(ng)?(?=^|$|')/'$1$1$2/"
+  - "xform/iu(?=^|$|')/<n>/"
+  - "xform/[iu]a(?=^|$|')/<b>/"
+  - "xform/[uv]an(?=^|$|')/<c>/"
+  - "xform/[uv]e(?=^|$|')/<x>/"
+  - "xform/ing(?=^|$|')|er(?=^|$|')/<q>/"
+  - "xform/^sh/<i>/"
+  - "xform/^ch/<u>/"
+  - "xform/^zh/<v>/"
+  - "xform/'sh/'<i>/"
+  - "xform/'ch/'<u>/"
+  - "xform/'zh/'<v>/"
+  - "xform/uo(?=^|$|')/<o>/"
+  - "xform/[uv]n(?=^|$|')/<z>/"
+  - "xform/([a-z>])i?ong(?=^|$|')/$1<y>/"
+  - "xform/[iu]ang(?=^|$|')/<h>/"
+  - "xform/([a-z>])en(?=^|$|')/$1<r>/"
+  - "xform/([a-z>])eng(?=^|$|')/$1<t>/"
+  - "xform/([a-z>])ang(?=^|$|')/$1<g>/"
+  - "xform/ian(?=^|$|')/<j>/"
+  - "xform/([a-z>])an(?=^|$|')/$1<f>/"
+  - "xform/iao(?=^|$|')/<k>/"
+  - "xform/([a-z>])ao(?=^|$|')/$1<d>/"
+  - "xform/([a-z>])ai(?=^|$|')/$1<s>/"
+  - "xform/([a-z>])ei(?=^|$|')/$1<w>/"
+  - "xform/ie(?=^|$|')/<m>/"
+  - "xform/ui(?=^|$|')/<v>/"
+  - "xform/([a-z>])ou(?=^|$|')/$1<p>/"
+  - "xform/in(?=^|$|')/<l>/"
   - "xform/'|<|>//"
 algebra_mspy:
   - "derive/^([jqxy])u(?=^|$|')/$1v/"

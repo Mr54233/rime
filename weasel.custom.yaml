@@ -18,8 +18,8 @@ patch:
   # 如果想要修改皮肤，直接更改 color_scheme 的值即可
   style:
     # 以下修改皮肤
-    color_scheme: wechat
-    color_scheme_dark: win11dark
+    color_scheme: wechat2
+    color_scheme_dark: wechat_dark2
     color_font: true
     horizontal: false # 横排显示
     inline_preedit: true # 嵌入式候选窗单行显示
@@ -47,6 +47,10 @@ patch:
       shadow_offset_x: 0 # 阴影x偏置
       shadow_offset_y: 2 # 阴影x偏置
       align_type: bottom # 字体对齐,可选值：center,bottom
+    # --- 视觉效果 ---
+    translucency: true       # 开启毛玻璃效果
+    blur: true               # 开启背景模糊效果
+    color_space: display_p3  # 色域设置
 
   preset_color_schemes:
     so_young:
@@ -165,3 +169,40 @@ patch:
       hilited_mark_color: 0xFFC24C
       hilited_candidate_back_color: 0x383838
       shadow_color: 0x20000000
+
+    wechat2: 
+      name: "WeChat"
+      back_color: 0xE6F0F0F0 # 背景色 - F0F0F0 (浅灰), E6 Alpha (约90%不透明度) - 透明度降低
+      text_color: 0x424242 # 输入码颜色 - 深灰
+      candidate_text_color: 0x3c3c3c # 候选字颜色 - 较深灰
+      comment_text_color: 0x999999 # 候选注释颜色 (如拼音) - 中灰
+      label_color: 0x999999 # 候选序号颜色 - 中灰
+      border_color: 0x00FFFFFF # 边框颜色 - 完全透明
+      hilited_back_color: 0x75B100 # 高亮背景色 (输入码) - 微信绿
+      hilited_text_color: 0xFFFFFF # 高亮文字颜色 (输入码) - 白色
+      hilited_candidate_back_color: 0x75B100 # 高亮候选字背景色 - 微信绿
+      hilited_candidate_text_color: 0xFFFFFF # 高亮候选字文字颜色 - 白色
+      hilited_label_color: 0xFFFFFF # 高亮候选字序号颜色 - 白色
+      hilited_comment_text_color: 0xFFFFFF # 高亮候选字注释颜色 - 白色
+      # hilited_mark_color: 0xBF616A # (可选) 标签前的标记颜色
+      shadow_color: 0x00000000 # 阴影颜色 - 完全透明 (移除阴影)
+      hilited_candidate_shadow_color: 0x00000000 # 高亮候选阴影颜色 - 完全透明 (移除阴影)
+
+    # --- 微信暗色主题 (降低透明度, 移除阴影, 作为默认启用) ---
+    wechat_dark2: 
+      name: "WeChat_dark"
+      back_color: 0xE62E2E2E # 背景色 - 2E2E2E (深灰), E6 Alpha (约90%不透明度) - 透明度降低
+      text_color: 0xFFFFFF # 输入码颜色 - 白色
+      candidate_text_color: 0xFFFFFF # 候选字颜色 - 白色
+      comment_text_color: 0xAAAAAA # 候选注释颜色 - 浅灰
+      label_color: 0x888888 # 候选序号颜色 - 暗灰
+      border_color: 0x00151515 # 边框颜色 - 完全透明
+      hilited_back_color: 0x75B100 # 高亮背景色 (输入码) - 微信绿
+      hilited_text_color: 0x151515 # 高亮文字颜色 (输入码) - 深灰/近黑
+      hilited_candidate_back_color: 0x75B100 # 高亮候选字背景色 - 微信绿
+      hilited_candidate_text_color: 0x151515 # 高亮候选字文字颜色 - 深灰/近黑
+      hilited_label_color: 0xFFFFFF # 高亮候选字序号颜色 - 白色
+      hilited_comment_text_color: 0xFFFFFF # 高亮候选字注释颜色 - 白色
+      # hilited_mark_color: 0xBF616A # (可选) 标签前的标记颜色
+      shadow_color: 0x00000000 # 阴影颜色 - 完全透明 (移除阴影)
+      hilited_candidate_shadow_color: 0x00000000 # 高亮候选阴影颜色 - 完全透明 (移除阴影)
