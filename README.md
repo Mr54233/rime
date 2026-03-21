@@ -14,15 +14,15 @@
 
 [Rime Input Method Engine / 中州韵输入法引擎](https://rime.im/) 是一个跨平台的输入法算法框架。
 
-这里是 Rime 的一份配置仓库，用户需要下载各平台对应的前端，并将此配置应用到配置目录。
+基于这一框架，Rime 开发者与其他开源社区的参与者在多个平台上创造了不同的输入法前端实现。
+
+这里是 Rime 的一份配置仓库，用户需要下载 [各平台对应的前端](https://github.com/rime/librime/#frontends)，并将此配置应用到配置目录。
 
 雾凇拼音提供了一套开箱即用的完整配置，包含输入方案（全拼、常见双拼）、长期维护的开源词库及各项扩展功能。
 
-详细介绍：[Rime 配置：雾凇拼音](https://dvel.me/posts/rime-ice/)
+[详细介绍](https://dvel.me/posts/rime-ice/)  |  [常见问题](https://github.com/iDvel/rime-ice/issues/133)  |  [更新日志](./others/CHANGELOG.md)
 
-[常见问题](https://github.com/iDvel/rime-ice/issues/133)
-
-[更新日志](./others/CHANGELOG.md)
+[在线体验](https://www.mintimate.cc/zh/demo/fcitx5Online.html)（由 [fcitx5-rime.js](https://github.com/rimeinn/fcitx5-rime.js) 支持，感谢 [@Mintimate](https://github.com/Mintimate) 友情构建）
 
 <br>
 
@@ -41,6 +41,7 @@
     -   日期、时间、星期（详见方案 `/date_translator` 节点）
     -   农历（转写：<kbd>N</kbd>+八位数字；获取当前农历：全拼<kbd>nl</kbd>，双拼<kbd>lunar</kbd>）
     -   简易计算器（<kbd>cC</kbd>+算式）
+    -   UUID（<kbd>uuid</kbd>）
     -   常见错音错字提示
     -   置顶候选项（详见方案 `/pin_cand_filter` 节点）
     -   所有标点符号直接上屏
@@ -63,7 +64,7 @@
       -   《现代汉语词典》
       -   《同义词词林》
       -   《新华成语大词典》
-      -   [校对标准论坛](http://www.jiaodui.com/bbs/)
+      -   [校对标准论坛](http://www.jiaodui.org/bbs/)
 - Rime、Squirrel、Weasel 常用配置项的详尽注释
 
 <br>
@@ -72,13 +73,25 @@
 
 因为没有找到一份比较好的词库，干脆自己维护一个。综合了几个不错的词库，精心调教了很多。
 
-主要维护的词库：
+词库简介：
 
-- `8105` 字表。
-- `base` 基础词库。
-- `ext` 扩展词库，小词库。
-- `tencent` 扩展词库，大词库。
-- Emoji
+- 字表：
+
+    - `8105` 常用字表，《通用规范汉字表》+基本的扩充。
+
+    - `41448` Unihan 大字表，默认未启用。
+
+
+- 词库：
+    - `base` 基础词库，含两字词及调频。
+    - `ext` 扩展词库，小词库，含多音字注音。
+    - `tencent` 扩展词库，大词库，无注音（由 Rime 自动注音），含非多音字、只发一种音的多音字、同义多音字。
+
+- 纯手搓的 Emoji
+- 英文词库：
+    - `en` 20k 左右的常见单词 + 少许补充。
+    - `en_ext` 扩展词库，大部分是缩写或互联网相关。
+
 
 维护内容主要是异形词、错别字的校对，错误注音的修正，缺失的常用词汇的增添，词频的调整。
 
@@ -102,12 +115,17 @@
 | Android | [Trime](https://github.com/osfans/trime)（同文输入法）       | ≥ 3.2.11                          |                                                              |
 | iOS     | [Hamster](https://apps.apple.com/cn/app/%E4%BB%93%E8%BE%93%E5%85%A5%E6%B3%95/id6446617683)（仓输入法） | N/A                               | 闭源；有内购                                                 |
 | Linux   | ibus + [ibus-rime](https://github.com/rime/ibus-rime)        | librime ≥ 1.8.5 且装有 librime-lua | 部分发行版需手动安装 librime-lua                             |
+| Linux   | fcitx4 + [fcitx-rime](https://github.com/fcitx/fcitx-rime)   | 完整模式：librime ≥ 1.8.5 且装有 librime-lua | 仅支持 Linux 的 fcitx4 + fcitx-rime；配置目录为 `$HOME/.config/fcitx/rime/` |
 | Linux   | fcitx5 + [fcitx5-rime](https://github.com/fcitx/fcitx5-rime) | librime ≥ 1.8.5 且装有 librime-lua | 部分发行版需手动安装 librime-lua                             |
 | macOS   | [Squirrel](https://github.com/rime/squirrel)（鼠须管）       | ≥ 1.0.0                           | 0.16.0 - 0.18.0 版本请参考[🔗](https://github.com/iDvel/rime-ice/issues/1062) |
 | macOS   | [fcitx5-macos](https://github.com/fcitx-contrib/fcitx5-macos) | N/A                               | 支持[卷轴模式](https://github.com/iDvel/rime-ice/issues/941) |
 | Windows | [Weasel](https://github.com/rime/weasel)（小狼毫）           | ≥ 0.15.0                            | 0.14.3 可手动更新 [rime.dll](https://github.com/iDvel/rime-ice/issues/197)（但不支持彩色 emoji）<br />Weasel 当下有兼容性问题，建议安装其他输入法备用 |
 
 Linux 依赖问题的具体解释请参考 [#840](https://github.com/iDvel/rime-ice/issues/840)。
+
+> [!NOTE]
+> 本仓库中提供的 fcitx4 兼容（`others/fcitx4/`）仅支持 **Linux + fcitx4 + fcitx-rime**。
+> 不适用于 fcitx5、ibus、macOS、Windows 等其他前端或平台。
 
 雾凇拼音的部分配置可能要求更高的 librime 或者客户端版本，这些功能已在具体配置文件中注明。
 
@@ -127,7 +145,7 @@ Linux 依赖问题的具体解释请参考 [#840](https://github.com/iDvel/rime-
 只需要使用或者更新词库的话，可以手动粘贴覆盖 `cn_dicts` `en_dicts` `opencc` 三个文件夹。
 
 > [!NOTE]
-> 雾凇拼音中多个文件可能与其他方案同名冲突，如果是新手想一键安装，建议备份原先配置，**清空配置目录**再导入。
+> 雾凇拼音中多个文件可能与其他方案同名冲突，如果是新手想一键安装，建议**备份原先配置，清空配置目录**再导入。
 
 > [!NOTE]
 >
@@ -172,6 +190,16 @@ git clone https://github.com/rime/plum.git plum
 cd ~/plum
 bash rime-install <recipe_name>
 ```
+部分发行版可能需要手动指定安装位置
+
+```bash
+# 为 fictx5 安装
+rime_frontend=fcitx5-rime bash rime-install <recipe_name>
+
+# 为 fcitx4 安装
+rime_frontend=fcitx-rime bash rime-install <recipe_name>
+```
+
 ---
 
 </details>
@@ -279,6 +307,39 @@ patch:
 
 </details>
 
+### Linux Fcitx4
+如果您使用的是 Linux + Fcitx4，可使用仓库自带脚本自动备份并同步配置：
+
+```bash
+bash others/fcitx4/install_to_fcitx4.sh
+```
+
+如果系统较旧（例如 `librime < 1.8.5` 或缺少 `librime-lua`），可使用兼容模式（禁用 Lua 扩展功能，仅保留基础拼音/词库能力）：
+
+```bash
+bash others/fcitx4/install_to_fcitx4.sh --legacy-no-lua
+```
+
+说明：默认执行 `bash others/fcitx4/install_to_fcitx4.sh` 时，脚本会自动检测环境；若版本过旧或缺少 `librime-lua`，会自动切换到兼容模式。
+
+兼容模式（`--legacy-no-lua`）会关闭以下 Lua 扩展能力：
+- 以词定字（`[`、`]`）
+- 日期、时间、星期
+- 农历
+- UUID
+- Unicode 输入（`U` 前缀）
+- 数字、金额大写（`R` 前缀）
+- 简易计算器（`cC` 前缀）
+- 错音错字提示
+- 英文自动大写
+- v 模式 symbols 优先
+- 置顶候选项
+- 长词优先
+- 英文候选降权
+- 部件拆字辅码（`search.lua`）
+
+兼容模式仍保留：基础拼音输入、词库、`melt_eng` 英文输入、中英混输、简繁切换、Emoji、用户短语。
+
 <br>
 
 ## 感谢 ❤️
@@ -293,6 +354,8 @@ patch:
 - [数字、人民币大写插件](https://github.com/yanhuacuo/98wubi/blob/master/lua/number.lua)（@98wubi）
 - [农历插件](https://github.com/boomker/rime-fast-xhup)（@boomker | [LGPL 3.0](https://github.com/boomker/rime-fast-xhup/blob/master/LICENSE)）
 - 未能在此处详述的、在本库源码注释中提及的项目及作者给予的帮助和参考
+
+感谢 [校对标准论坛](http://www.jiaodui.org/bbs/) 的存在。
 
 感谢 [@Huandeep](https://github.com/Huandeep) 整理的多个词库。
 
@@ -314,4 +377,5 @@ Thanks to JetBrains for the OSS development license.
 
 如果觉得项目不错，可以请 Dvel 吃个煎饼馃子。
 
-<img src="./others/sponsor.webp" alt="请 Dvel 吃个煎饼馃子" width=600 />
+<img src="./others/sponsor.webp" alt="请 Dvel 吃个煎饼馃子" width=300 />
+
