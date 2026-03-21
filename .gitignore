@@ -4,7 +4,10 @@
 dist/
 
 build/
-sync/
+# 忽略 sync 目录下的所有内容，除了用户词库导出文件
+sync/*
+!sync/**/
+!sync/**/*.userdb.txt
 *.userdb/
 installation.yaml
 user.yaml
