@@ -1,7 +1,7 @@
 # Rime user dictionary
 #@/db_name	rime_ice
 #@/db_type	userdb
-#@/rime_version	1.13.1
+#@/rime_version	1.16.1
 #@/tick	454322
 #@/user_id	55
 A 	A	c=101 d=0.985112 t=454322
@@ -11278,6 +11278,7 @@ cong nan jing 	从南京	c=1 d=0.88692 t=454322
 cong nei bu 	从内部	c=1 d=2.62819e-74 t=454322
 cong ni 	从你	c=5 d=1.0373 t=454322
 cong ni chuang hu bian shang 	从你窗户边上	c=1 d=0.913931 t=454322
+cong ni de bao 	从你的包	c=1 d=1 t=4
 cong ni kou zhong shuo chu 	从你口中说出	c=1 d=1.32855e-48 t=454322
 cong ni men na 	从你们那	c=1 d=2.69969e-125 t=454322
 cong ni zhe ge di fang 	从你这个地方	c=1 d=1.53937e-163 t=454322
@@ -23373,7 +23374,7 @@ gao ji ge 	搞几个	c=2 d=1.40821e-86 t=454322
 gao ji gong neng 	高级功能	c=1 d=1 t=454322
 gao ji mao 	搞鸡毛	c=1 d=1.07445e-80 t=454322
 gao ji mo xing 	高级模型	c=1 d=3.86165e-101 t=454322
-gao ji she zhi 	高级设置	c=1 d=7.92868e-182 t=454322
+gao ji she zhi 	高级设置	c=1 d=1 t=454322
 gao ji shi tang 	高级食堂	c=1 d=0.985112 t=454322
 gao ji shu 	高技术	c=0 d=1.90755e-40 t=454322
 gao ji shu li 	高技术里	c=1 d=1.91711e-39 t=454322
@@ -28206,7 +28207,7 @@ hai you yi ge xia wu 	还有一个下午	c=7 d=6.17646 t=454322
 hai you yi ge xiao shi 	还有一个小时	c=3 d=0.224249 t=454322
 hai you yi gen 	还有一根	c=1 d=6.31908e-42 t=454322
 hai you yi liang 	还有一辆	c=1 d=0.985112 t=454322
-hai you yi tai 	还有一台	c=1 d=1 t=454302
+hai you yi tai 	还有一台	c=1 d=0.904837 t=454322
 hai you yi tian 	还有一天	c=3 d=0.909373 t=454322
 hai you yi xie 	还有一些	c=4 d=4.0929e-50 t=454322
 hai you yi zhi 	还有一只	c=1 d=1.96865e-57 t=454322
@@ -29452,7 +29453,7 @@ he bing hui 	合并会	c=1 d=2.00353e-234 t=454322
 he bing le 	合并了	c=4 d=0.591555 t=454322
 he bing yi xia 	合并一下	c=8 d=9.74117e-16 t=454322
 he bing zhe ge 	合并这个	c=1 d=2.09524e-143 t=454322
-he bing zhi hou 	合并之后	c=1 d=1 t=454316
+he bing zhi hou 	合并之后	c=1 d=0.970446 t=454322
 he bo luo 	和菠萝	c=1 d=0.923116 t=454322
 he bu liao 	合不了	c=1 d=0.965605 t=454322
 he bu liao 	喝不了	c=1 d=1.82367e-10 t=454322
@@ -43962,7 +43963,7 @@ ling wai yi ci 	另外一次	c=1 d=1.28412e-89 t=454322
 ling wai yi fang mian 	另外一方面	c=2 d=0.831104 t=454322
 ling wai yi ge 	另外一个	c=17 d=2.93597 t=454322
 ling wai yi ge ren 	另外一个人	c=1 d=0.826959 t=454322
-ling wai yi tai 	另外一台	c=1 d=1 t=454286
+ling wai yi tai 	另外一台	c=1 d=0.83527 t=454322
 ling wai yi tao 	另外一套	c=1 d=4.82605e-253 t=454322
 ling wai yi tiao 	另外一条	c=1 d=6.87267e-30 t=454322
 ling wai yi zhong 	另外一种	c=3 d=9.15466e-197 t=454322
@@ -52288,6 +52289,7 @@ ni dao shi shuo 	你倒是说	c=3 d=0.932394 t=454322
 ni dao xia mian 	你到下面	c=1 d=0.985112 t=454322
 ni de 	你的	c=215 d=16.6353 t=454322
 ni de ai 	你的爱	c=1 d=0 t=454322
+ni de bao 	你的包	c=0 d=0.1 t=3
 ni de bu zhi chi 	你的不支持	c=1 d=0.932394 t=454322
 ni de che 	你的车	c=1 d=3.4265e-165 t=454322
 ni de cuo 	你的错	c=1 d=0 t=454322
@@ -73664,7 +73666,7 @@ wa sui dao 	挖隧道	c=1 d=0.985112 t=454322
 wa ta xi 	哇他洗	c=3 d=4.88448e-130 t=454322
 wa wa 	娃娃	c=2 d=1.84209 t=454322
 wa wa lian 	娃娃脸	c=2 d=0.960789 t=454322
-wa wa wa 	哇哇哇	c=3 d=0.927743 t=454322
+wa wa wa 	哇哇哇	c=3 d=0.955997 t=454322
 wa wan le 	挖完了	c=1 d=1.00448e-170 t=454322
 wa yi ge 	挖一个	c=1 d=0 t=454322
 wa yi xia 	挖一下	c=2 d=1.29226e-46 t=454322
