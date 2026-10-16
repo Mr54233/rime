@@ -1,4 +1,4 @@
-﻿-- 来源 https://github.com/yanhuacuo/98wubi-tables > http://98wb.ysepan.com/
+-- 来源 https://github.com/yanhuacuo/98wubi-tables > http://98wb.ysepan.com/
 -- 数字、金额大写
 -- 触发前缀默认为 recognizer/patterns/number 的第 2 个字符，即 R
 
@@ -63,8 +63,6 @@ end
 
 -- 数值转换为中文
 local function number2cnChar(num, flag, digitUnit, wordFigure) --flag=0中文小写反之为大写
-    local result = ""
-
     if tonumber(flag) < 1 then
         digitUnit = digitUnit or { [1] = "万", [2] = "亿" }
         wordFigure = wordFigure or { [1] = "〇", [2] = "一", [3] = "十", [4] = "元" }
@@ -73,6 +71,7 @@ local function number2cnChar(num, flag, digitUnit, wordFigure) --flag=0中文小
         wordFigure = wordFigure or { [1] = "零", [2] = "壹", [3] = "拾", [4] = "元" }
     end
     local lens = string.len(num)
+    local result
     if lens < 5 then
         result = formatNum(num, flag)
     elseif lens < 9 then

@@ -1,8 +1,6 @@
--- 辅码，https://github.com/mirtlecn/rime-radical-pinyin/blob/master/search.lua.md
---
 -- Copyright (C) [Mirtle](https://github.com/mirtlecn)
--- License: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
 -- 使用说明：<https://github.com/mirtlecn/rime-radical-pinyin/blob/master/search.lua.md>
+
 -- 处理 lua 中的特殊字符用于匹配
 local function alt_lua_punc( s )
     if s then
@@ -45,9 +43,7 @@ local function update_dict_entry( s, code, mem, proj )
         local code_convert = code:sub( i, i + 1 )
         local p = proj:apply( code_convert, true )
         if p and #p > 0 then code_convert = p end
-        if code_convert == 'dian' and pos[loop] then
-            -- Ignored
-        else
+        if code_convert ~= 'dian' or not pos[loop] then
             table.insert( custom_code, code_convert )
         end
         loop = loop + 1
@@ -142,7 +138,7 @@ function f.init( env )
     env.search = Memory( env.engine, Schema( schema_name ) )
     if schema_name and env.search then
         env.if_schema_lookup = true
-        env.search_limit = config:get_int( ns .. '/schema_search_limit' ) or 1000
+        env.search_limit = config:get_int( ns .. '/schema_search_limit' ) or 2000
     end
 
     ::checkdb::
@@ -283,12 +279,12 @@ function f.func( input, env )
     end
 
     -- 上屏其余的候选
-    for i, cand in ipairs( long_word_cands ) do yield( cand ) end
-    if env.show_other_cands then for i, cand in ipairs( other_cand ) do yield( cand ) end end
+    for _, cand in ipairs( long_word_cands ) do yield( cand ) end
+    if env.show_other_cands then for _, cand in ipairs( other_cand ) do yield( cand ) end end
 end
 
 function f.tags_match( seg, env )
-    for i, v in ipairs( env.tag ) do if seg.tags[v] then return true end end
+    for _, v in ipairs( env.tag ) do if seg.tags[v] then return true end end
     return false
 end
 

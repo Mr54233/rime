@@ -7,7 +7,7 @@
 
 	为了让这个 Lua 同时适配全拼与双拼，使用 `spelling_hints` 生成的 comment（全拼拼音）作为通用的判断条件。
 	感谢大佬@[Shewer Lu](https://github.com/shewer)提供的思路。
-	
+
 	容错词在 cn_dicts/others.dict.yaml 中，有新增建议可以提个 issue
 --]]
 
@@ -119,6 +119,10 @@ function M.init(env)
         ["yin gai"] = { text = "应该", comment = "应(yīng)该" },
         ["nian tie"] = { text = "粘贴", comment = "粘(zhān)贴" },
         ["nian yi nian"] = { text = "粘一粘", comment = "粘(zhān)" },
+        ["shen tu"] = { text = "神荼", comment = "神荼(shū)" },
+        ["yu lei"] = { text = "郁垒", comment = "郁垒(lǜ)" },
+        ["shen tu yu lei"] = { text = "神荼郁垒", comment = "神荼(shū)郁垒(lǜ)" },
+        ["yu lei shen tu"] = { text = "郁垒神荼", comment = "郁垒(lǜ)神荼(shū)" },
         ["tu fan"] = { text = "吐蕃", comment = "吐蕃(bō)" },
         ["tu gu hun"] = { text = "吐谷浑", comment = "吐谷(yù)浑" },
         ["gao ju li"] = { text = "高句丽", comment = "高句(gōu)丽" },
