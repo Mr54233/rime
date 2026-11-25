@@ -7,7 +7,7 @@ build/
 # 字体文件体积大(约455MB)，不入库，各设备自行放置
 fonts/
 # 忽略 sync 目录下的所有内容，除了用户词库导出文件
-sync/*
+sync/**
 !sync/**/
 !sync/**/*.userdb.txt
 *.userdb/
@@ -26,3 +26,6 @@ cn_dicts/temp.txt
 rime_console
 rime_deployer
 rime_patch
+
+# 朗月拼音等非启用方案的陈旧导出（每次 /sync 会重新生成）
+sync/**/luna_pinyin.userdb.txt
